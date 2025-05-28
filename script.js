@@ -1,5 +1,6 @@
 function stringChop(str, size) {
   let res = [];
+	size  = +size;
 	for(let i=0;i<str.length;i+=size){
        res.push(str.split("").slice(i,i+size).join(""));
 	}
