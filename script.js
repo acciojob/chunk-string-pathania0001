@@ -1,8 +1,15 @@
 function stringChop(str, size) {
-  // your code here
+  let res = [];
+	for(let i=0;i<str.length;i+=size){
+       res.push(str.split("").slice(i,i+size).join(""));
+	}
+   return res;
 }
 
-// Do not change the code below
+
+ 
+//Doot change the code below
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
+
