@@ -1,10 +1,12 @@
 function stringChop(str, size) {
   let res = [];
-	str = str.toString();
+	
+	str = str === "" ? str:str.toString();
 	size  = +size;
 	for(let i=0;i<str.length;i+=size){
        res.push(str.split("").slice(i,i+size).join(""));
 	}
+	
    return res;
 }
 
